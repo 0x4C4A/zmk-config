@@ -47,14 +47,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // | GRAVE |       |     |      |      |      |                   |      |       |       |      |       |   =   |
 // |       |  <<   |  >> |  []  | |||> |      |                   |      |       |       |      |       |  DEL  |
-// |       |  HOME |  ^  |  END | VOLUP|  {   |                   |  }   |       |       |      |   =   |   |   |
-// |       |   <   |  V  |  >   | VOLDN|  [   |        |  |       |  ]   |       |       |      |   -   |       |
+// |       |  HOME |  ^  |  END | VOLUP|  [   |                   |  ]   |       |       |      |   =   |   |   |
+// |       |   <   |  V  |  >   | VOLDN|  {   |        |  |       |  }   |       |       |      |   -   |       |
 //                 |     |      |      |      |        |  |       |      |       |  LALT |      |
             bindings = <
 &kp GRAVE &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3              &trans    &trans     &trans  &trans    &trans    &kp EQL
 &trans    &kp C_PREV &kp C_NEXT   &kp C_STOP   &kp C_PP     &trans                    &trans    &trans     &trans  &trans    &trans    &kp DEL
-&trans    &kp HOME   &kp UP       &kp END      &kp C_VOL_UP &kp LBRC                  &kp RBRC  &trans     &trans  &trans    &kp EQL   &kp PIPE
-&trans    &kp LEFT   &kp DOWN     &kp RIGHT    &kp C_VOL_DN &kp LBKT  &trans   &trans &kp RBKT  &trans     &trans  &trans    &kp MINUS &trans
+&trans    &kp HOME   &kp UP       &kp END      &kp C_VOL_UP &kp LBKT                  &kp RBKT  &trans     &trans  &trans    &kp EQL   &kp PIPE
+&trans    &kp LEFT   &kp DOWN     &kp RIGHT    &kp C_VOL_DN &kp LBRC  &trans   &trans &kp RBRC  &trans     &trans  &trans    &kp MINUS &trans
                      &trans       &trans       &trans       &trans    &trans   &trans &mo 3    &kp LALT   &trans  &trans
             >;
 
@@ -81,13 +81,13 @@
 
         special_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |     | BTCLR | BT0 | BT1  | BT2  | BT3  |                 |     |      |       |     |     |       |
+// |     |       | BT0 | BT1  | BT2  | BT3  |                |     |      |       |     |     | BTCLR |
 // |     |       |     |      |      |      |                |     |      |       |     |     |       |
 // |     |       |     |      |      |      |                |     |      |       |     |     |       |
 // |     |       |     |      |      |      |      |  |      |     |      |       |     |     |       |
 //               |     |      |      |      |  BL  |  |  BL  |     |      |       |     |
             bindings = <
-&trans     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                             &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
 &trans     &trans     &trans       &trans       &trans       &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans     &trans       &trans       &trans       &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans     &trans       &trans       &trans       &trans        &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans
